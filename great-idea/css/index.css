@@ -77,7 +77,7 @@ header {
 	padding: 10px;
 	margin-bottom: 30px;
 	background-color: white;
-	border-radius: 0 0 10px 10px;
+	/* border-radius: 0 0 10px 10px; */
 	position: fixed;
 	z-index: 100;
 	display: flex;
@@ -294,4 +294,77 @@ section.hero .hero-img {
 	background: aqua;
 	padding: 30px;
 	margin-bottom: 0;
+}
+
+.services {
+	line-height: 1.25;
+}
+
+.services h1 {
+	font-size: 2rem;
+}
+
+.services-hero {
+	width: 100%;
+	overflow: hidden;
+	padding: 90px 0 20px;
+	border-bottom: 3px solid gray;
+	margin-bottom: 30px;
+}
+
+.services-hero img {
+	margin-bottom: 30px;
+}
+
+.services-cards-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	border-bottom: 3px solid gray;
+}
+
+.services-card {
+	border: 3px solid gray;
+	padding: 20px;
+	background: #f4f3f4;
+	margin-bottom: 30px;
+	width: 48%;
+}
+
+.services-card h2 {
+	font-size: 1.25rem;
+}
+
+.services-card p {
+	margin-bottom: 20px;
+}
+
+.services-card button {
+	background: white;
+	padding: 10px 50px;
+}
+
+.services-facts {
+	display: flex;
+}
+
+.services-facts__left {
+	width: 48%;
+	padding: 0 30px 0 0;
+}
+
+.services-facts__left p {
+	margin-bottom: 20px;
+}
+
+.services-facts__left ul li {
+	margin: 0 0 20px 20px;
+	list-style: disc;
+	padding-left: 20px;
+}
+
+.services footer {
+	text-align: center;
+	margin-top: 60px;
 }
