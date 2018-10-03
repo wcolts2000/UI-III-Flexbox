@@ -76,7 +76,7 @@ p, button {
 header {
 	padding: 10px;
 	margin-bottom: 30px;
-	background-color: aqua;
+	background-color: white;
 	border-radius: 0 0 10px 10px;
 	position: fixed;
 	z-index: 100;
@@ -170,7 +170,7 @@ main .card-3 {
 }
 
 main .card-2, main .card-3 {
-	padding: 20px;
+	padding: 20px 0;
 	width: 380px;
 }
 
@@ -186,7 +186,7 @@ main .card-3 {
 	width: 260px;
 	/* float: left; */
 	height: 380px;
-	padding: 20px;
+	padding: 20px 0;
 }
 
 
