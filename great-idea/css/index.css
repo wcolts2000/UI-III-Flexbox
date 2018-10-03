@@ -54,7 +54,9 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+		font-family: 'Titillium Web', sans-serif;
+		max-width: 800px;
+		margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,7 +65,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
@@ -78,10 +80,11 @@ header {
 	border-radius: 0 0 10px 10px;
 	position: fixed;
 	z-index: 100;
+	display: flex;
 }
 
 header nav {
-	display: inline-block;
+	/* display: inline-block; */
 	padding: 20px;
 	padding-left: 0;
 	height: 60px;	
@@ -99,7 +102,7 @@ header nav a:last-child {
 }
 
 header .logo {
-	float: right;
+	/* float: right; */
 	padding: 15px;
 }
 
@@ -107,10 +110,11 @@ header .logo {
 	border-bottom: 3px solid gray;
 	height: 550px;
 	padding-top: 120px;
+	display: flex;
 }
 
 .hero .left {
-	display: inline-block;
+	/* display: inline-block; */
 	width: 50%;
 	text-align: center;
 }
@@ -136,12 +140,12 @@ header .logo {
 }
 
 .hero img {
-	float: right;
+	/* float: right; */
 }
 
 main {
 	padding: 30px 0;
-	height: 600px;
+	height: 680px;
 	width: 800px;
 	overflow: hidden;
 	border-bottom: 3px solid gray;
@@ -153,20 +157,23 @@ main.product {
 
 main .card-2,
 main .card-3 {
-	float: left;
-}
-
-main .card-2 {
-	width: 50%;
-	float: left;
-	height: 100px;
-	padding: 20px;
+	/* float: left; */
 }
 
 .two-col,
 .three-col {
-	padding-bottom: 100px;
+	/* padding-bottom: 100px; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; 
+	/* height: 300px; */
 }
+
+main .card-2, main .card-3 {
+	padding: 20px;
+	width: 380px;
+}
+
 
 
 
@@ -176,14 +183,15 @@ main img {
 }
 
 main .card-3 {
-	width: 33%;
-	float: left;
-	height: 100px;
+	width: 260px;
+	/* float: left; */
+	height: 380px;
 	padding: 20px;
 }
 
+
 footer {
-	clear: both;
+	/* clear: both; */
 }
 
 footer {
@@ -240,7 +248,7 @@ section.hero .hero-img {
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 350px;
-	float: right;
+	/* float: right; */
 	height: 350px;
 }
 
@@ -249,7 +257,7 @@ section.hero .hero-img {
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 350px;
-	float: right;
+	/* float: right; */
 	height: 350px;
 	margin-top: 50px;
 	transition: all 0.8s ease-in-out;
@@ -266,7 +274,8 @@ section.hero .hero-img {
 	background-size: contain;
 	background-repeat: no-repeat;
 	height: 200px; 
-	margin-top: 60px
+	margin-top: 60px;
+	display: block;
 }
 
 
